@@ -13,9 +13,7 @@ If a spot instance gets reclaimed, Kubernetes reschedules the pod on a new node.
 
 ## How it works
 
-1. **Offline**: CLAP model processes audio files and generates 512-dimensional embeddings
-2. **Build**: Embeddings are baked into the docker image (153KB  for 75 songs)
-3. **Runtime**: API loads embeddings and computes cosine similarity
+A CLAP model processes audio files and generates 512-dimensional embeddings offline, which are then baked into the Docker image during the build phase, about 153KB for 75 songs. At runtime, the API simply loads these pre-computed embeddings and computes cosine similarity against incoming queries.
 
 ## API
 
@@ -26,7 +24,7 @@ curl http://<ip>:30080/songs
 # get recommendations for a song
 curl -X POST http://<ip>:30080/recommend \
   -H "Content-Type: application/json" \
-  -d '{"song": "IN THIS DARK", "top_k": 5}'
+  -d '{"song": "IN THIS DARK", "top_k": 3}'
 ```
 
 response:
