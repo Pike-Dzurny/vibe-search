@@ -2,10 +2,7 @@
 
 Music recommendation engine using CLAP (Contrastive Language-Audio Pretraining) embeddings. Finds sonically similar songs based on audio characteristics rather than metadata or genre tags.
 
-[![Watch the video](https://img.youtube.com/vi/aBhfZJV-dMo/hqdefault.jpg)](https://www.youtube.com/embed/aBhfZJV-dMo)
-
-[<img src="https://img.youtube.com/vi/aBhfZJV-dMo/hqdefault.jpg" width="600" height="300"
-/>](https://www.youtube.com/embed/aBhfZJV-dMo)
+https://github.com/user-attachments/assets/c8862485-3045-48cb-8405-0c15e9cc4073
 
 ## Why AWS spot instances?
 
