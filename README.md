@@ -1,6 +1,6 @@
 # vibe-search
 
-Music recommendation engine using CLAP (Contrastive Language-Audio Pretraining) embeddings. Finds sonically similar songs based on audio characteristics rather than metadata or genre tags.
+Music recommendation API deployed on a self-managed Kubernetes cluster (k3s) running on AWS EC2 Spot Instances, with GitOps-driven continuous deployment via ArgoCD. Uses CLAP (Contrastive Language-Audio Pretraining) embeddings to find sonically similar songs based on audio characteristics rather than metadata or genre tags. Infrastructure provisioned with Terraform and containerized with Docker.
 
 https://github.com/user-attachments/assets/c8862485-3045-48cb-8405-0c15e9cc4073
 
@@ -69,7 +69,7 @@ terraform destroy
 
 ## Related Repos
 
-- [vibe-search-gitops](https://github.com/Pike-Dzurny/vibe-search-gitops) - Includes the Kubernetes manifests for argocd
+- [vibe-search-gitops](https://github.com/Pike-Dzurny/vibe-search-gitops) - Includes the Kubernetes manifests for ArgoCD
 
 ## Tech Stack
 
