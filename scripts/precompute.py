@@ -19,7 +19,6 @@ def clean_song_name(filename: str) -> str:
     # remove extension
     name = Path(filename).stem
     
-    # jamendo format: XXX-XXXXXXX-Artist-Title
     # split by dash and take last two parts (artist and title)
     parts = name.split('-')
     if len(parts) >= 4:
