@@ -2,8 +2,7 @@
 
 Music recommendation engine using CLAP (Contrastive Language-Audio Pretraining) embeddings. Finds sonically similar songs based on audio characteristics rather than metadata or genre tags.
 
-https://github.com/Pike-Dzurny/vibe-search/raw/main/demo.mp4
-
+<video src="demo.mp4" controls></video>
 
 ## Why AWS spot instances?
 
